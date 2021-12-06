@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
 	margin: 0;
 	padding: 0;
@@ -6,17 +6,17 @@ html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
 html, body { min-height: 100%; }
 
 body {
-	background-color: #ffffff;
-	color: #eee;
-	font-family: 'Lato', sans-serif;
+	background-color: #aa0202;
+	color: rgb(0, 0, 0);
+	font-family: 'Open Sans', sans-serif;
 	font-size: 62.5%;
 	padding: 0 20px;
 	box-sizing: border-box;
 	z-index: 2;
 }
 code {
-	background: #fff1;
-	font-family: 'Inconsolata', monospace;
+	background: rgba(241, 44, 44, 0.74);
+	font-family: 'Open Sans', sans-serif;
 	padding: .2em .4em;
 	z-index: 2;
 }
@@ -56,7 +56,7 @@ code {
 
 /* Appearance */
 .links {
-	background-color: #123;
+	background-color: rgb(11, 95, 180);
 	background-image: linear-gradient(to bottom, #0003, transparent);
 	border-bottom: 1px solid #0003;
 	box-shadow: 0 0 32px #0003;
@@ -149,6 +149,21 @@ section {
 	 padding: 0;
 	 position: absolute;
 }
+.carousel > input:nth-of-type(11):checked ~ .carousel__slides .carousel__slide:first-of-type {
+	margin-left: -1000%;
+}
+.carousel > input:nth-of-type(10):checked ~ .carousel__slides .carousel__slide:first-of-type {
+	margin-left: -900%;
+}
+.carousel > input:nth-of-type(9):checked ~ .carousel__slides .carousel__slide:first-of-type {
+	margin-left: -800%;
+}
+.carousel > input:nth-of-type(8):checked ~ .carousel__slides .carousel__slide:first-of-type {
+	margin-left: -700%;
+}
+.carousel > input:nth-of-type(7):checked ~ .carousel__slides .carousel__slide:first-of-type {
+	margin-left: -600%;
+}
  .carousel > input:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type {
 	 margin-left: -500%;
 }
@@ -168,23 +183,39 @@ section {
 	 margin-left: 0%;
 }
  .carousel > input:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
-	 box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+	 box-shadow: 0px 0px 0px 5px rgba(255, 217, 0, 0.993);
 }
  .carousel > input:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
-	 box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+	 box-shadow: 0px 0px 0px 5px rgba(255, 217, 0, 0.993);
 }
  .carousel > input:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
-	 box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+	 box-shadow: 0px 0px 0px 5px rgba(255, 217, 0, 0.993);
 }
  .carousel > input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
-	 box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+	 box-shadow: 0px 0px 0px 5px rgba(255, 217, 0, 0.993);
 }
  .carousel > input:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
-	 box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+	 box-shadow: 0px 0px 0px 5px rgba(255, 217, 0, 0.993);
 }
  .carousel > input:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
-	 box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+	 box-shadow: 0px 0px 0px 5px rgba(255, 217, 0, 0.993);
 }
+.carousel > input:nth-of-type(7):checked ~ .carousel__thumbnails li:nth-of-type(7) {
+	box-shadow: 0px 0px 0px 5px rgba(255, 217, 0, 0.993);
+}
+.carousel > input:nth-of-type(8):checked ~ .carousel__thumbnails li:nth-of-type(8) {
+	box-shadow: 0px 0px 0px 5px rgba(255, 217, 0, 0.993);
+}
+.carousel > input:nth-of-type(9):checked ~ .carousel__thumbnails li:nth-of-type(9) {
+	box-shadow: 0px 0px 0px 5px rgba(255, 217, 0, 0.993);
+}
+.carousel > input:nth-of-type(10):checked ~ .carousel__thumbnails li:nth-of-type(10) {
+	box-shadow: 0px 0px 0px 5px rgba(255, 217, 0, 0.993);
+}
+.carousel > input:nth-of-type(11):checked ~ .carousel__thumbnails li:nth-of-type(11) {
+	box-shadow: 0px 0px 0px 5px rgba(255, 217, 0, 0.993);
+}
+
  .carousel__slides {
 	 position: relative;
 	 z-index: 1;
@@ -239,13 +270,13 @@ section {
 	 padding: 20px 20px 0 20px;
 	 flex: 0 0 auto;
 	 width: 25%;
-	 color: rgba(0, 0, 0, 0.5);
+	 color: rgba(0, 0, 0, 255, 217, 0, 0.993);
 	 font-size: medium;
 	 min-width: 150px;
 }
  .carousel__slide .credit {
 	 margin-top: 1rem;
-	 color: rgba(0, 0, 0, 0.5);
+	 color: rgba(0, 0, 0, 255, 217, 0, 0.993);
 	 font-size: medium;
 	 display: block;
 }
@@ -311,7 +342,7 @@ section {
 }
 
 .hero h1 {
-	color: #fff;
+	color: rgb(255, 255, 255);
 	font-family: 'Museo Sans', Avenir, 'Helvetica Neue', Helvetica, sans-serif;
 	font-weight: 900;
 	font-size: large;
@@ -319,5 +350,5 @@ section {
 	font-size: large; /* If you want to be extra-fancy */
 	line-height: 110%;
 	text-shadow: 0.05em 0.05em 0.1em #000;
-	text-shadow: 0 0.025em 0.05em rgba(0,0,0,0.75), 0 0.05em 0.1em rgba(0,0,0,0.5);
+	text-shadow: 0 0.025em 0.05em rgba(0,0,0,0.75), 0 0.05em 0.1em rgba(0,0,0,255, 217, 0, 0.993);
 }
