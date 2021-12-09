@@ -92,6 +92,32 @@ code {
 	right: 0;
 	z-index: 2;
 }
+/* LOGO */
+#nav {
+	min-height:1px;
+   }
+   
+   .span-logo {
+   display: inline-block;
+   vertical-align: top;
+   height: 11px;
+   width: 1px;
+}
+.toplogo {
+    margin-top: 5px;
+}
+
+.toplogo img {
+    height : 30%;
+    width : 30%;
+}
+/* stop logo
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+*/
 .links {
 	display: grid;
 	grid-template-columns: repeat(var(--items), 1fr);
