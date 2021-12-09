@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
+	margin: 0;
+	padding: 0;
+}
+html, body { min-height: 100%; }
+
+body {
+	background-color: #aa0202;
+	color: rgb(0, 0, 0);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 62.5%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	z-index: 2;
+}
+code {
+	background: rgba(241, 44, 44, 0.74);
+	font-family: 'Open Sans', sans-serif;
+	padding: .2em .4em;
+	z-index: 2;
+}
+#yes{ 
+    color: rgb(0, 170, 0);
+    font-size: 25px;
+}
+#no{ 
+    color: red;
+    font-size: 25px;
+}
+#footer {
+	background-color: #246c;
+	background-image: linear-gradient(to bottom, transparent, #0009);
+	border-top: 1px solid #fff3;
+	box-shadow: inset 0 1px 0 #fff3, 0 0 32px #000;
+	overflow: hidden;
+	padding: 8px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9001;
+	z-index: 2;
+}
+#footer a {
+	color: #85c6f6;
+	padding: 1em 0;
+	text-decoration: none;
+	z-index: 2;
+}
+#footer ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	font-size: 2em;
+	font-weight: 300;
+	z-index: 2;
+}
+#footer ul li {
+	padding: 0 .5em;
+	z-index: 2;
+}
+
+/* The Magic */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.hero h1 {
+	color: rgb(255, 255, 255);
+	font-family: 'Museo Sans', Avenir, 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: large;
+	text-align: center;
+	font-size: large; /* If you want to be extra-fancy */
+	line-height: 110%;
+	text-shadow: 0.05em 0.05em 0.1em #000;
+	text-shadow: 0 0.025em 0.05em rgba(0,0,0,0.75), 0 0.05em 0.1em rgba(0,0,0,255, 217, 0, 0.993);
+}
