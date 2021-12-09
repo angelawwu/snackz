@@ -1,124 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="snackz.css">
+<link rel="stylesheet" href="overall.css">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNACKZ</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 40px;
+        }
+
+        body {
+            background: #aa0202;
+            padding: 45px 0 25px;
+
+        }
+
+        .outer {
+            width: 80%;
+            max-width: 1170px;
+            min-width: 320px;
+            margin: auto;
+            background: #fff;
+            position: relative;
+            border: 5px solid rgba(255, 217, 0, 0.993);
+            border-radius: 25px;
+            padding: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3), inset 2px 2px 2px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <header id="header">
-	<nav class="links" style="--items: 5;">
-		<a href="index.html"><img src="https://i.imgur.com/xtheo93.png" id="logo" /></a>
-		<a href="chips.html">CHIPS</a>
-		<a href="drinks.html">DRINKS</a>
-		<a href="sweets.html">SWEETS</a>
-		<a href="#"><span style="color:rgb(255, 255, 255);font-weight:bold">RANKING</span></a>
-		<span class="line"></span>
-	</nav>
+    <nav class="links" style="--items: 5;">
+        <a href="index.html">ALL</a>
+        <a href="chips.html">CHIPS</a>
+        <a href="drinks.html">DRINKS</a>
+        <a href="sweets.html">SWEETS</a>
+        <a href="#"><span style="color:rgb(255, 255, 255);font-weight:bold">RANKING</span></a>
+        <span class="line"></span>
+    </nav>
 </header>
 
 <section>
     <div class="container">
-        <div class="carousel">
-            <input type="radio" name="slides" checked="checked" id="slide-1">
-            <input type="radio" name="slides" id="slide-2">
-            <input type="radio" name="slides" id="slide-3">
-            <input type="radio" name="slides" id="slide-4">
-            <input type="radio" name="slides" id="slide-5">
-            <input type="radio" name="slides" id="slide-6">
-            <ul class="carousel__slides">
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1041/800/450" alt="">
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Tim Marshall</span>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1043/800/450" alt="">
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Christian Joudrey</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1044/800/450" alt="">
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Steve Carter</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1045/800/450" alt="">
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Aleksandra Boguslawska</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1049/800/450" alt="">
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Rosan Harmens</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1052/800/450" alt="">
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Annie Spratt</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>    
-            <ul class="carousel__thumbnails">
-                <li>
-                    <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
-                </li>
-            </ul>
-        </div>
     </div>
 </section>
+
 <body>
-    
+    <div class="outer">
+        <br>
+        <p id="yes"> 1. hot cheetos baked (recommended by naomi)</p> <br>
+        <p id="yes"> 2. motts fruit snacks (recommended by angela)</p> <br>
+        <p id="yes"> 3. water</p> <br>
+        <p id="yes"> 4. bbq lays baked</p> <br>
+        <p id="yes"> 5. izze assorted flavors</p> <br>
+        <p id="yes"> 6. funyuns</p> <br>
+        <p id="yes"> 7. poptarts cinnamon</p> <br>
+        <p id="yes"> 8. grandma’s mini chocolate chip cookies</p> <br>
+        <p id="yes"> 9. sour cream lays baked</p> <br>
+        <p id="yes"> 10. poptarts strawberry (recommended by sean)</p> <br>
+        <p id="yes"> 11. cheeto puffs</p> <br>
+        <p id="yes"> 12. doritos cool ranch</p> <br>
+        <p id="yes"> 13. doritos nacho</p> <br>
+        <p id="no"> 14. doritos sweet & spicy</p> <br>
+        <p id="no"> 15. cheetos baked</p> <br>
+        <p id="no"> 16. tropicana orange juice</p> <br>
+        <p id="no"> 17. fantastix flamin hot</p> <br>
+        <p id="no"> 18. fantastix chili cheese <br>
+        </p> <br>
+    </div>
 </body>
+
 </html>
