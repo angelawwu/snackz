@@ -9,10 +9,10 @@ body {
 	background-color: #aa0202;
 	color: rgb(0, 0, 0);
 	font-family: 'Open Sans', sans-serif;
-	font-size: 62.5%;
 	padding: 0 20px;
 	box-sizing: border-box;
 	z-index: 2;
+	font-size: 62.5%;
 }
 code {
 	background: rgba(241, 44, 44, 0.74);
