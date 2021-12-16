@@ -6,18 +6,18 @@ html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
 html, body { min-height: 100%; }
 
 body {
-	background-color: #e8ded1;
+	background-color:  #aa0202;
 	color: #eee;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 62.5%;
-	padding: 0 20px;
+	padding: 10px 20px;
 	box-sizing: border-box;
 	z-index: 2;
 }
 code {
 	background: #fff1;
 	font-family: 'Open Sans', sans-serif;
-	padding: .2em .4em;
+	padding: 20px;
 	z-index: 2;
 }
 
@@ -111,13 +111,7 @@ code {
     height : 30%;
     width : 30%;
 }
-/* stop logo
-.container img {
-    width: 100%;
-    height: auto;
-}
 
-*/
 .links {
 	display: grid;
 	grid-template-columns: repeat(var(--items), 1fr);
@@ -150,3 +144,12 @@ code {
 .links > a:nth-of-type(10):hover ~ .line { --index: 10; }
 .links > a:last-of-type:hover ~ .line { --index: var(--items); }
 
+section {
+	background: #ffffff;
+	padding: 70px 10px;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 100px;
+}
