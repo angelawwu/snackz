@@ -49,12 +49,75 @@
 					<h1> SNACKZ    </h1>
 					<h3> are you hungry? </h3>
 					<h2> [ naomi angela sean ] </h2>
-					<img src="https://i.imgur.com/il1SzxZ.png" alignt="right">
-					
-                	
+					<img src="https://i.imgur.com/il1SzxZ.png" alignt="right" id= "hover-area">
+
 
 				</figcaption>
 			</div>
         </figure>
 	</div>
 </section>
+
+<form method="post">
+	
+	<label>Search</label>
+	<input type="text" name="search">
+	<input type="submit" name="submit">
+		
+</form>
+
+<h2 id="kms">
+	<?php
+			include_once 'index.html'; //add template
+			$con = new PDO("mysql:host=localhost;dbname=feedback",'root','');
+			
+			if (isset($_POST["submit"])) {
+				$str = $_POST["search"];
+				$sth = $con->prepare("SELECT * FROM `sheet1` WHERE B = '$str'");
+			
+				$sth->setFetchMode(PDO:: FETCH_OBJ);
+				$sth -> execute();
+			
+				if($row = $sth->fetch())
+				{
+					?>
+					<br><br><br>
+					<table>
+						<tr>
+							<th>Type</th>
+							<th>Name</th>
+							<th>Price</th>
+							<th>Rating</th>
+							<th>Texture</th>
+							<th>Flavor</th>
+							<th>Recommend?</th>
+						</tr>
+						<tr>
+							<td><?php echo $row->A;?></td>
+							<td><?php echo $row->B;?></td>
+							<td><?php echo $row->C;?></td>
+							<td><?php echo $row->D;?></td>
+							<td><?php echo $row->E;?></td>
+							<td><?php echo $row->F;?></td>
+							<td><?php echo $row->G;?></td>
+						</tr>
+			
+					</table>
+			<?php 
+				}
+					
+					
+					else{
+						echo "Name Does not exist";
+					}
+			
+			
+			}
+			
+			?>
+	</h2>
+	
+<div class="onClickTextOverImage"
+     img src="https://i.imgur.com/il1SzxZ.png">
+  <div>Oranges are <a target="_blank" href="https://www.google.com" onclick="stopPropagation(event)">orange</a></div>
+</div>
